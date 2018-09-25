@@ -27,3 +27,26 @@ all the nodejs APIs are available
 
 Babel 7 will not automatically add "use strict" at the top of commonjs Module so in order to avoid this either use transform-strict-mode plugin or add "use strict" manually in each file.
 
+There are 2 types of plugins 
+1. Transform plugin
+2. Syntax plugins
+
+1. Transform Plugins apply transformation to your code
+
+2. Syntax plugins allow babel to parse only specific type of syntax
+
+transformation plugin automatically enable syntax plugins
+
+Plugin ordering
+
+plugins run before presets
+plugins ordering is first to last
+preset ordering is reversed 
+
+Creating preset is as simple as return array of plugins
+
+preset can contain other presets and plugins with options
+
+
+
+
